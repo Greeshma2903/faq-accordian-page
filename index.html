@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
@@ -13,13 +14,23 @@
 
 <body>
   <main>
-    <img class="box-img" src="#" alt="">
 
     <div class="container">
-            
+
       <div class="illustration-container">
-        <img class="platform-img" src="images/bg-pattern-mobile.svg" alt="background-pattern">
-        <img class="woman-img" src="images/illustration-woman-online-mobile.svg" alt="monitor-illustration">
+        <picture>
+          <source media="(min-width:1000px)" class="platform-img" srcset="images/bg-pattern-desktop.svg"
+            alt="background-pattern">
+            <img class="platform-img" src="images/bg-pattern-mobile.svg" alt="background-pattern">
+        </picture>
+        <picture>
+          <source media="(min-width:1000px)" class="woman-img" srcset="images\illustration-woman-online-desktop.svg"
+            alt="monitor-illustration">
+            <img class="woman-img" srcset="images\illustration-woman-online-mobile.svg" alt="monitor-illustration">
+        </picture>
+
+        <!-- <img class="platform-img" src="images/bg-pattern-mobile.svg" alt="background-pattern">
+        <img class="woman-img" src="images\illustration-woman-online-mobile.svg" alt="monitor-illustration"> -->
       </div>
 
       <div class="question-container">
@@ -33,9 +44,9 @@
             <div class="question-title">
               <p>
                 How many team members can I invite?
-                <button class="question-btn">
+                <!-- <button class="question-btn">
                   <img src="images/icon-arrow-down.svg" alt="toggle-arrow">
-                </button>
+                </button> -->
               </p>
               <hr>
             </div>
@@ -51,9 +62,6 @@
             <div class="question-title">
               <p>
                 What is the maximum file upload size?
-                <button class="question-btn">
-                  <img src="images/icon-arrow-down.svg" alt="toggle-arrow">
-                </button>
               </p>
               <hr>
             </div>
@@ -68,9 +76,6 @@
             <div class="question-title">
               <p>
                 How do I reset my password?
-                <button class="question-btn">
-                  <img src="images/icon-arrow-down.svg" alt="toggle-arrow">
-                </button>
               </p>
               <hr>
             </div>
@@ -86,9 +91,6 @@
             <div class="question-title">
               <p>
                 Can I cancel my subscription?
-                <button class="question-btn">
-                  <img src="images/icon-arrow-down.svg" alt="toggle-arrow">
-                </button>
               </p>
               <hr>
             </div>
@@ -103,9 +105,6 @@
             <div class="question-title">
               <p>
                 Do you provide additional support?
-                <button class="question-btn">
-                  <img src="images/icon-arrow-down.svg" alt="toggle-arrow">
-                </button>
               </p>
               <hr>
             </div>
