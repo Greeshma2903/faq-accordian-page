@@ -135,13 +135,13 @@ hr {
 
 .woman-img {
   position: absolute;
-  left: 17px;
+  left: -10px;
   bottom: 10px;
 }
 
 .platform-img {
   position: absolute;
-  left: 40px;
+  left: 15px;
   bottom: 0px;
 }
 
