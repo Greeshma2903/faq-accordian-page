@@ -2,7 +2,6 @@
 const questions = document.querySelectorAll(".question");
 
 questions.forEach(function (question) { //all question loop
-    const arrowBtn = question.querySelector(".question-btn");
     const questionTitle = question.querySelector(".question-title");
     //for the question clicked on
     questionTitle.addEventListener('click', function () {
